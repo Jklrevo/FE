@@ -1,0 +1,27 @@
+git init
+git add .
+git commit -m "New file"
+git remote add origin https://github.com/Jklrevo/FE.git
+git push -u origin master
+git checkout -b develop
+git push -u origin develop
+git checkout -b first
+git add .
+git commit -m "First string"
+git push -u origin first
+git clone https://github.com/Jklrevo/FE.git
+git checkout -b second develop
+git add .
+git commit -m "Another first string"
+git push -u origin second
+git checkout develop
+git merge origin/first
+git merge origin/second
+git commit -m "Fix conflicts"
+git push
+
+
+
+
+
+
