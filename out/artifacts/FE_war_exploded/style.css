@@ -82,6 +82,7 @@ html, body {
     font-size: 13px;
     line-height: 1.5;
     text-align: right;
+    transition: top 1s ease-out 0.5s;
 
 }
 .block img{
@@ -273,8 +274,10 @@ color:rgb(52, 49, 65);
     margin-top: 100px;
 }
 .video-block{
-    align-self:center;
-    margin-top: 50px;
+    position: absolute;
+    margin-top: 3050px;
+    margin-left: 200px;
+    z-index: 250;
 }
 #commentBlock {
     background: white;
@@ -428,4 +431,13 @@ button:focus{
     width: 250px;
     text-align: left;
     color: white;
+}
+
+.button-primary:hover{
+    color:#ff585a ;
+    background-color: white;
+    border-color: #ff585a;
+}
+#footerBlock .content-block{
+    height: max-content;
 }
