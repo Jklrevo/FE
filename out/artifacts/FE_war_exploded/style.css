@@ -10,14 +10,16 @@ html, body {
     height: 100%;
     background-color: #f0f0f0;
 }
-.content{
+.body-blocks{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: max-content;
 }
 
 .logo-container{
     display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 .logo-container a{
     color: rgb(255, 255, 255);
@@ -28,14 +30,19 @@ html, body {
     text-align: center;
 }
 
-.block {
+.content-block {
     margin-left: 5%;
+    margin-right: 5%;
     z-index: 2;
     position: absolute;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-bar ul {
+    list-style: none;
     margin-right: 10%;
     display: flex;
     align-items: center;
@@ -61,6 +68,8 @@ html, body {
 }
 
 .button-primary {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
     font-weight: bold;
     border-style: solid;
     border-width: 2px;
@@ -70,14 +79,48 @@ html, body {
     margin-left: 80px;
     margin-right: 60px;
     padding: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+
 }
-.background img{
+.block img{
     z-index: -1;
+    margin: 0px 0px 0px 0px;
+}
+
+.download-app-block{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin-top:15%;
+}
+.download-app-buttons {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.download-app-buttons img{
+    margin-right: 15px;
+}
+
+.download-app-block span{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: left;
+    z-index: 220;
 }
 
 
-
-
+.download-app-buttons .button-primary{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 20px;
+    z-index: 211;
+    align-items: center;
+}
 
 
 @font-face {
@@ -86,5 +129,303 @@ src: url("fonts/Kepler 296.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+#statisticBlock {
+    background: white;
+    height: 1280px;
+}
+
+#statisticBlock .additional-inf{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.carousel{
+    margin:150px auto 20px auto;
+}
+#statisticBlock .carousel-indicators{
+    position: relative;
+
+}
+
+.carousel-item span{
+    font-size: 40px;
+    color: rgb(52, 49, 65);
+    line-height: 1.2;
+    z-index: 190;
+}
+
+.carousel-indicators{
+    margin-top: 50px;
+}
+
+.carousel-inner{
+    width: 500px;
+    text-align: center;
+}
 
 
+#statisticBlock .content-block{
+    display: flex;
+    flex-direction: column;
+}
+.carousel-indicators li{
+    background-color: gray;
+}
+
+.item {
+    position: relative;
+    float: left;
+}
+
+.item h2 {
+    text-align:center;
+    position: absolute;
+    line-height: 160px;
+    width: 100%;
+}
+
+svg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+    stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+    stroke-dashoffset: 440;
+}
+
+.html .circle_animation {
+    -webkit-animation: html 1s ease-out forwards;
+    animation: html 1s ease-out forwards;
+}
+
+
+@-webkit-keyframes html {
+    to {
+        stroke-dashoffset: 440; /* 50% would be 220 (half the initial value specified above) */
+    }
+}
+
+@keyframes html {
+    to {
+        stroke-dashoffset: 330;
+    }
+}
+
+#statisticBlock .row{
+    justify-content: center;
+}
+#statisticBlock .card{
+    width: 300px;
+    margin: 200px 0px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+    color: rgb(52, 49, 65);;
+}
+
+.additional-inf{
+color:rgb(52, 49, 65);
+}
+
+#statisticBlock .content-block img{
+    margin-top: 50px;
+}
+#videoAreaBlock .card{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    background: none;
+    border: none;
+}
+#videoAreaBlock .card img{
+    width: max-content;
+    height: max-content;
+    align-self: center;
+    z-index: 1;
+}
+
+#videoAreaBlock .card-title{
+    text-transform: uppercase;
+}
+#videoAreaBlock h1{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    z-index: 146;
+    align-self: center;
+    width: 600px;
+    margin-top: 300px;
+}
+#videoAreaBlock .card{
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    font-size: 13px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#videoAreaBlock .row{
+    margin-top: 100px;
+}
+.video-block{
+    align-self:center;
+    margin-top: 50px;
+}
+#commentBlock {
+    background: white;
+    height: 1500px;
+}
+
+#commentBlock .content-block{
+    display: flex;
+    align-items: center;
+}
+
+#commentBlock h1{
+    margin-top: 700px;
+    margin-bottom: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+.card img{
+    z-index: 1;
+    width: max-content;
+    height: max-content;
+}
+
+#commentBlock .card>img{
+    position: absolute;
+    top: -30px;
+    align-self: center;
+}
+
+#commentBlock .card-body{
+    margin-top: 20px;
+    width: 300px;
+    align-self: center;
+}
+
+#commentBlock .card-title{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+#commentBlock .card-body>a{
+    color:#ff5858;
+}
+#commentBlock .card-text{
+    margin-bottom: 0;
+}
+
+.mark-img{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px 30px 0px;
+}
+
+#commentBlock .card{
+    width: 350px;
+    margin: 15px;
+}
+
+
+
+#commentBlock .carousel-inner{
+    text-align: unset;
+}
+#commentBlock .card-container{
+    display: flex;
+    justify-content: center;
+}
+#commentBlock .carousel-control-next{
+    margin-left:150px;
+}
+#commentBlock .carousel-control-prev{
+    margin-right:150px;
+}
+#commentBlock div>span{
+    margin-top: 50px;
+}
+#footerBlock .col-md-2 a{
+    color: rgba(255, 255, 255, 0.302);
+}
+#footerBlock h5{
+width:max-content;
+}
+#footerBlock .col-md-2{
+    max-width: none;
+}
+#groupItemBox{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-bottom: 0px;
+    padding-top:0px;
+}
+#groupItemBox .input-group{
+    width: 350px;
+    border-radius: 50px;
+    background: white;
+}
+#groupItemBox div input{
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#groupItemBox .input-group-append button{
+    border-radius: 50px;
+    margin: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: linear-gradient(to right,#f857a5, #ff585a);
+    border-color: #f857a5;
+}
+button:focus{
+    outline: none;
+}
+#footerBlock .socialBox{
+    display: flex;
+    flex-direction: column;
+}
+#footerBlock .socialButtons ul{
+    display: flex;
+}
+#footerBlock .socialButtons .button-primary{
+    border-radius: 50px;
+    margin:0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerBlock .socialButtons .button-primary img{
+   position: absolute;
+}
+#footerBlock footer>div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+}
+
+.footer-copyright{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+}
+.footer-copyright span{
+    width: 250px;
+    text-align: left;
+    color: white;
+}

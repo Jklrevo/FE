@@ -3,29 +3,505 @@
 <head>
     <meta charset="UTF-8">
     <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" ENGINE="text/css" href="style.css">
+
 </head>
 <body>
-<div class="content">
-    <div class="background">
-        <div class="block">
+<div class="body-blocks">
+    <div class="block" id="mainPageBlock">
+        <div class="content-block">
             <nav class="nav-bar">
                 <div class="logo-container">
                     <img src="images/Logo.png">
                     <a href="" class="logo">Suada</a>
                 </div>
-                <ul style="list-style: none;">
-                    <li class="ui-button">features</li>
-                    <li class="ui-button">news</li>
-                    <li class="ui-button">about</li>
-                    <li class="ui-button">support</li>
-                    <li class="ui-button">login</li>
-                    <li class="ui-button button-primary">sign up</li>
+                <ul>
+                    <li class="ui-button"><a>features</a></li>
+                    <li class="ui-button"><a>news</a></li>
+                    <li class="ui-button"><a>about</a></li>
+                    <li class="ui-button"><a>support</a></li>
+                    <li class="ui-button"><a>login</a></li>
+                    <li class="ui-button">
+                        <button class="button-primary">sign up</button>
+                    </li>
                 </ul>
             </nav>
+            <div class="download-app-block">
+                <span>Great tool  to make your day much better</span>
+                <div class="download-app-buttons">
+                    <button class="button-primary"><img src="images/apple.png">get on ios</button>
+                    <button class="button-primary"><img src="images/android.png">get on android</button>
+                </div>
+            </div>
         </div>
         <img src="images/header_background.png">
     </div>
+    <div class="block" id="statisticBlock">
+        <div class="content-block">
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <span>Track your progress with our built-in tracker</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span>Slide 2 Hello we are working hard</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span>Slide 3 Hello we are working hard</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span>Slide 4 Hello we are working hard</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span>Slide 5 Hello we are working hard</span>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                </ol>
+            </div>
+            <span class="additional-inf">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanclitiis praesentium volupatum deleriti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate ron provident, similique sunt in culpa qui off cia deserunt mollitia animi, id est laborum et dolorum fuga.
+            </span>
+            <div class="row">
+                <div class="card">
+                    <div class="chart-container">
+                        <div class="item html">
+                            <h2>25%</h2>
+                            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#f857a5"/>
+                                        <stop offset="100%" stop-color="#ff585a"/>
+                                    </linearGradient>
+                                </defs>
+                                <g>
+                                    <circle class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8"
+                                            stroke="url(#gradient)" fill="none"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Error phone</h5>
+                        <p class="card-text">At vero eos et accusamus et iusto odio dignissimos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="chart-container">
+                        <div class="item html">
+                            <h2>25%</h2>
+                            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#f857a5"/>
+                                        <stop offset="100%" stop-color="#ff585a"/>
+                                    </linearGradient>
+                                </defs>
+                                <g>
+                                    <circle class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8"
+                                            stroke="url(#gradient)" fill="none"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Error phone</h5>
+                        <p class="card-text">At vero eos et accusamus et iusto odio dignissimos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="chart-container">
+                        <div class="item html">
+                            <h2>25%</h2>
+                            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#f857a5"/>
+                                        <stop offset="100%" stop-color="#ff585a"/>
+                                    </linearGradient>
+                                </defs>
+                                <g>
+                                    <circle class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8"
+                                            stroke="url(#gradient)" fill="none"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Error phone</h5>
+                        <p class="card-text">At vero eos et accusamus et iusto odio dignissimos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="chart-container">
+                        <div class="item html">
+                            <h2>25%</h2>
+                            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#f857a5"/>
+                                        <stop offset="100%" stop-color="#ff585a"/>
+                                    </linearGradient>
+                                </defs>
+                                <g>
+                                    <circle class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8"
+                                            stroke="url(#gradient)" fill="none"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Error phone</h5>
+                        <p class="card-text">At vero eos et accusamus et iusto odio dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/iPhone%206%20-%20Space%20Gray%20.png">
+        </div>
+    </div>
+    <div class="block" id="videoAreaBlock">
+        <div class="content-block">
+            <h1>Suada will be right there when you will need it</h1>
+            <div class="row">
+                <div class="card">
+                    <img class="card-image" src="images/global_img.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Global</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur acipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/great_doc_img.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Great documentation</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur acipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/saf_n_sec_img.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Safety & security</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur acipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/flexibility_img.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Flexibility</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur acipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/out_insight_img.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Outstanding insight</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur acipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/out_perf_img.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Outstanding performance</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur acipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-block">
+                <iframe src="//coub.com/embed/20l3bv?muted=false&autostart=false&originalSize=true&startWithHD=true"
+                        allowfullscreen frameborder="0" width="1280" height="720" allow="autoplay"></iframe>
+                <script async src="//c-cdn.coub.com/embed-runner.js"></script>
+            </div>
+        </div>
+        <img src="images/video_area_bg.png">
+    </div>
+    <div class="block" id="commentBlock">
+        <div class="content-block">
+            <h1>As far as we know people simply love Suada</h1>
+            <img src="images/points.png">
+            <span>At vero eos et accusamus et iusto odio dignissimos ducimus qui </span>
+            <div id="multiCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100 pt-5" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="card-container">
+                            <div class="card">
+                                <img class="card-image-top" src="images/face.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alexander Vanjuvic</h5>
+                                    <div class="mark-img">
+                                        <img src="images/stars.png">
+                                    </div>
+                                    <p class="card-text">Sed sad asdas aqwegzxcd zxc qwshk rahsh from srot eqw tqwis
+                                        selto so kitex resomef sae</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-image-top" src="images/face.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alexander Vanjuvic</h5>
+                                    <div class="mark-img">
+                                        <img src="images/stars.png">
+                                    </div>
+                                    <p class="card-text">Sed sad asdas aqwegzxcd zxc qwshk rahsh from srot eqw tqwis
+                                        selto so kitex resomef sae</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-image-top" src="images/face.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alexander Vanjuvic</h5>
+                                    <div class="mark-img">
+                                        <img src="images/stars.png">
+                                    </div>
+                                    <p class="card-text">Sed sad asdas aqwegzxcd zxc qwshk rahsh from srot eqw tqwis
+                                        selto so kitex resomef sae</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-container">
+                            <div class="card">
+                                <img class="card-image-top" src="images/face.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alexander Vanjuvic</h5>
+                                    <div class="mark-img">
+                                        <img src="images/stars.png">
+                                    </div>
+                                    <p class="card-text">Sed sad asdas aqwegzxcd zxc qwshk rahsh from srot eqw tqwis
+                                        selto so kitex resomef sae</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-image-top" src="images/face.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alexander Vanjuvic</h5>
+                                    <div class="mark-img">
+                                        <img src="images/stars.png">
+                                    </div>
+                                    <p class="card-text">Sed sad asdas aqwegzxcd zxc qwshk rahsh from srot eqw tqwis
+                                        selto so kitex resomef sae</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-image-top" src="images/face.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alexander Vanjuvic</h5>
+                                    <div class="mark-img">
+                                        <img src="images/stars.png">
+                                    </div>
+                                    <p class="card-text">Sed sad asdas aqwegzxcd zxc qwshk rahsh from srot eqw tqwis
+                                        selto so kitex resomef sae</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#multiCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <img src="images/arrow_left.png">
+                        <span class="sr-only">Предыдущий</span>
+                    </a>
+                    <a class="carousel-control-next" href="#multiCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <img src="images/arrow_right.png">
+                        <span class="sr-only">Cледующий</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block" id="footerBlock">
+        <div class="content-block">
+            <footer class="page-footer font-small stylish-color-dark pt-4">
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left">
+
+                        <!-- Grid column -->
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 mr-5">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase text-white mt-3 mb-4">Key features</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Compability</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Flexibility</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Safety & Security</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 mr-5">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase text-white mt-3 mb-4">Support</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="#!">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Live Chat</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 mr-5">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase text-white mt-3 mb-4">News & Resources</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Latest news</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Tips & Tricks</a>
+                                </li>
+                                <li>
+                                    <a href="#!">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Press Kit</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+
+                        <hr class="clearfix w-100 d-md-none">
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 mr-5">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase text-white mt-3 mb-4">Developers</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Suada API</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Tutorials</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Dev Forum</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Open source</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="socialBox">
+                            <ul class="list-unstyled list-inline text-center" id="groupItemBox">
+                                <li class="list-inline-item">
+                                    <h5 class="font-weight-bold text-uppercase text-white mt-3 mb-4">Stay in touch with
+                                        us</h5>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Weekly newsletter"
+                                               aria-label="Weekly newsletter" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-danger btn-rounded" type="button">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="socialButtons">
+                                <ul class="list-unstyled list-inline text-center">
+                                    <li class="list-inline-item">
+                                      <button class="button-primary"><img src="images/twitter.png"></button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="button-primary"><img src="images/facebook.png"></button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="button-primary"><img src="images/google.png"></button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="button-primary"><img src="images/instagram.png"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+
+                </div>
+                <!-- Footer Links -->
+
+                <hr>
+
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                    <img src="images/Logo.png">
+                    <span>Copyright @ 2016 Suada Inc.
+                        All rights reserved.
+                    </span>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+        </div>
+        <img src="images/footer_bg.png">
+    </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
